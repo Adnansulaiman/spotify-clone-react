@@ -1,16 +1,22 @@
-import React from 'react'
-import SectionHeading from './SectionHeading'
-import SongCard from './SongCard'
+import React from "react";
+import SectionHeading from "./SectionHeading";
+import SongCard from "./SongCard";
 
 const TopSongs = () => {
   return (
-    <div className="flex md:pl-10 pl-5 pr-5 w-full md:w-2/5  flex-col">
-      <SectionHeading title='Top Songs' />
-      {[1,2,3,4,4,55,5,667].map(()=>(
-        <SongCard />
-      ))}
-    </div>
-  )
-}
+    
+      <div className="flex flex-col  h-2/4 ">
+        <SectionHeading title="Top Songs" />
+        <div className="flex-col flex overflow-y-auto no-scrollbar ">
 
-export default TopSongs
+        {[1, 2, 3, 4, 5, 6].map(() => (
+          <SongCard />
+        ))}
+        </div>
+      </div>
+      
+   
+  );
+};
+
+export default TopSongs;

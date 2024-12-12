@@ -3,6 +3,7 @@ import Profile from "../assets/profile.jpg";
 import Logo from "../assets/Spotify_logo_sm.png";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseOutline } from "react-icons/io5";
+import { IoSearchOutline } from "react-icons/io5";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // Tracks menu visibility
@@ -29,11 +30,12 @@ const NavBar = () => {
     <>
       {/* Desktop Navbar */}
       <div className="md:flex hidden w-full text-white h-16 justify-between items-center mt-3">
-        <div className="search w-3/5 pl-10">
+        <div className="relative search w-3/5 pl-10">
+          <IoSearchOutline className="absolute bottom-2 text-xl" />
           <input
             type="text"
             placeholder="Search"
-            className="bg-transparent pl-3 l-10 w-full h-10 border-b"
+            className="bg-transparent pl-8 w-full h-10 outline-none  border-b border-white "
           />
         </div>
         <div className="profile flex justify-center items-center gap-4 mr-5">

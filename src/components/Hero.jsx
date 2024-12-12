@@ -3,6 +3,7 @@ import { FaPlay } from "react-icons/fa";
 import Image from '../assets/billie.png'
 import SectionHeading from "./SectionHeading";
 import CardList from "./CardList";
+import PlaylistCard from "./PlaylistCard";
 
 
 const Hero = () => {
@@ -22,9 +23,9 @@ const Hero = () => {
     <img src={Image} alt="billie" className=" rounded-lg w-44 h-44 sm:w-64 sm:h-64 pb-2" />
   </div>
   <SectionHeading title="Playlist for you" />
-  <CardList />
+  <CardList card={<PlaylistCard />} />
   <SectionHeading title="Albums for you" />
-  <CardList />
+  <CardList card={<PlaylistCard />} />
   
 
 </div>

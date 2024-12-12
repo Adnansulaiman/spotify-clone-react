@@ -1,12 +1,11 @@
 import React from 'react'
-import PlaylistCard from "./PlaylistCard";
 import { Swiper,SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import { FreeMode } from "swiper/modules";
 
 
-const CardList = () => {
+const CardList = ({card}) => {
   return (
     <>
     
@@ -23,7 +22,7 @@ const CardList = () => {
         <SwiperSlide key={i} 
         style={{ width: '208px' }}
         >
-          <PlaylistCard />
+          {card}
         </SwiperSlide>
       ))}
     </Swiper>

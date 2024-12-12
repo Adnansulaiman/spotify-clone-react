@@ -10,7 +10,7 @@ import { HiMiniSpeakerWave } from "react-icons/hi2";
 
 const PlayTrack = () => {
   return (
-    <div className=' flex px-5 justify-between gap-9 md:gap-96 items-center fixed bottom-0   z-40 md:max-w-5/6 max-w-full h-20 bg-gray-700 rounded-t-2xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30'>
+    <div className=' flex px-5 justify-between gap-9 md:gap-96 items-center fixed bottom-0   z-40 md:max-w-5/6 max-w-full h-20 bg-gray-700 rounded-t-2xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30'>
       <div className="flex gap-2 sm:gap-4 justify-center items-start ">
         <img src={Image} alt="" className='sm:w-14 sm:h-14 w-12 h-12 rounded-lg'  />
         <div className="  flex flex-col ">
