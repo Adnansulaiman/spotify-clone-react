@@ -10,7 +10,7 @@ const CardList = () => {
   return (
     <>
     
-  <div className=" flex jutify-content-center items-center gap-3 "> 
+  <div className=" flex jutify-content-center items-center "> 
     <Swiper
       slidesPerView="auto"
       spaceBetween={15}

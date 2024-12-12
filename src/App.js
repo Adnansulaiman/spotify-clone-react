@@ -11,9 +11,9 @@ import PlayTrack from './components/PlayTrack';
 
 function App() {
   return (
-    <div className='overflow-hidden bg-gray-950 text-white w-screen max-h-screen flex'>
+    <div className='md:overflow-hidden  bg-gray-950 text-white w-screen h-screen  flex'>
       <SideBar />
-      <div className="flex relative bg-gray-900 rounded-s-3xl flex-col w-full">
+      <div className="flex relative bg-gray-950 md:bg-gray-900 md:rounded-s-3xl rounded-none flex-col w-full ">
         <NavBar />
         <Routes>
           <Route path='/' element={<Discover />} />
